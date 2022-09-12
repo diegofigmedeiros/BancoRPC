@@ -1,4 +1,7 @@
-package com.gugawag.rpc.banco;
+package com.diegofigmedeiros.rpc.rmi.banco;
+
+import com.diegofigmedeiros.rpc.rmi.service.BancoServiceIF;
+import com.diegofigmedeiros.rpc.rmi.service.BancoServiceServer;
 
 import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;
@@ -19,6 +22,7 @@ public class AppBanco {
         // liga (bind) o serviço ao RMI Registry
         registry.rebind("BancoService", bancoService);
 
-        System.out.println("Service de banco registrado ....");
+        System.out.println("\n=== Diego Figueiredo de Medeiros ===");
+        System.out.println("Service de banco registrado ...");
     }
 }
